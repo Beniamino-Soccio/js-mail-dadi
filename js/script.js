@@ -1,6 +1,12 @@
 console.log('JS OK');
 // FASE PREPARAZIONE
 let message = "il vincitore è: ";
+
+/*prendo gli elementi dal dom */
+const userNumElement = document.getElementById('user-num');
+const cpuNumElement = document.getElementById('cpu-num');
+const resultElement = document.getElementById('result');
+
 //FASE ELABORAZIONE
 // ! genero i due numeri casuali del dado
 
@@ -20,3 +26,6 @@ if (numberCpu > numberUser){
 
 //FASE OUTPUT
 console.log(message);
+userNumElement.innerHTML = numberUser;
+cpuNumElement.innerHTML = numberCpu;
+resultElement.innerHTML = message;

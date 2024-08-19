@@ -31,3 +31,14 @@ cpuNumElement.innerHTML = numberCpu;
 resultElement.innerHTML = message;
 
 // ES.2
+
+/*
+-creo l'array con un tot di email valide per il login 
+-creo un piccolo form per inserire l'email
+-"raccolgo" l'email con il bottone
+-confronto l'email con quelle presente nell'array ciclandolo
+-stampo un commento in base al risultato
+*/
+
+const listEmail = ['aaa@gmail.com', 'bbb@gmail.com', 'ccc@gmail.com', 'ddd@gmail.com', 'eee@gmail.com'];
+console.table(listEmail);

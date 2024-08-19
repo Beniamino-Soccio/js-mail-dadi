@@ -40,5 +40,32 @@ resultElement.innerHTML = message;
 -stampo un commento in base al risultato
 */
 
+//creazione array email
 const listEmail = ['aaa@gmail.com', 'bbb@gmail.com', 'ccc@gmail.com', 'ddd@gmail.com', 'eee@gmail.com'];
 console.table(listEmail);
+
+//raccolgo il bottone dal DOM
+const button = document.getElementById('confirm');
+
+// !click bottone
+button.addEventListener('click', function(){
+    /*al cliccare del bottone raccolgo gli elementi che mi interessano*/
+    const emailUserField = document.getElementById('email-user');
+    const alertElement = document.getElementById('alert');
+
+    const emailUser = emailUserField.value.trim();
+    console.log(emailUser);
+
+    /*confronto email*/
+
+    let alert = 'inserisci una email corretta';
+
+    for (let i = 0; i < listEmail.length; i++) {
+        if (emailUser === listEmail[i]) {
+            alert = "login effettuato";
+        }
+    }
+    //output responso email
+    console.log(alert);
+    alertElement.innerHTML = alert;
+})

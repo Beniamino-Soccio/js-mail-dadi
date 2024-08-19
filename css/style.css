@@ -11,9 +11,14 @@
 body{
     font-family: sans-serif;
 }
-
+h2{
+    font-size: 28px;
+    color: red;
+    margin: 20px 0;
+}
 /* Utils */
 
 .container{
     margin: 0 auto;
+    padding: 20px;
 }

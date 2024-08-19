@@ -29,3 +29,5 @@ console.log(message);
 userNumElement.innerHTML = numberUser;
 cpuNumElement.innerHTML = numberCpu;
 resultElement.innerHTML = message;
+
+// ES.2
